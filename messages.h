@@ -16,7 +16,8 @@ struct Header {
 
 struct Endpoint {
     uint32_t ip;
-    uint16_t port;
+    uint16_t udp_port;
+    uint16_t tcp_port;
 } __attribute__((packed));
 
 struct Register {
