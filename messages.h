@@ -2,7 +2,7 @@
 #include <cstdint>
 
 
-enum class MessageType : uint8_t {
+enum class RendezvousMessageType : uint8_t {
     REGISTER,
     KEEPALIVE,
     REQUEST,
@@ -11,7 +11,7 @@ enum class MessageType : uint8_t {
 
 struct Header {
     uint64_t node_id;
-    MessageType type;
+    RendezvousMessageType type;
 } __attribute__((packed));
 
 struct Endpoint {
