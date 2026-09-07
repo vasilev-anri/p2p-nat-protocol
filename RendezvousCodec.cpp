@@ -1,6 +1,6 @@
 #include "RendezvousCodec.h"
 
-#include "../utils/codec_utils.h"
+#include "codec_utils.h"
 
 
 std::vector<uint8_t> RendezvousCodec::encode_header(const Header& header) {
